@@ -1,0 +1,1 @@
+python3 models/pytorch-seq2seq/get_representations.py --data_path datasets/transformed/preprocessed/tokens/c2s/java-small/transforms.Identity/ --reps_path datasets/transformed/preprocessed/tokens/c2s/java-small/transforms.Identity/ --checkpoint_path final-models/seq2seq/c2s/java-small/normal/lstm/checkpoints/Best_F1/
