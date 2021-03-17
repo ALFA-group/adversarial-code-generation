@@ -1,0 +1,4 @@
+
+python3 models/pytorch-seq2seq/evaluate.py --data_path datasets/adversarial/sri/py150/gradient-attack/test.tsv --expt_dir final-models/seq2seq/sri/py150/normal/lstm --output_dir final-results/seq2seq/sri/py150/test-optim --load_checkpoint Best_F1 --src_field_name 'transforms.InsertHoles'
+python3 models/pytorch-seq2seq/evaluate.py --data_path datasets/adversarial/sri/py150/random-attack/test.tsv --expt_dir final-models/seq2seq/sri/py150/normal/lstm --output_dir final-results/seq2seq/sri/py150/test-optim --load_checkpoint Best_F1 --src_field_name 'transforms.InsertHoles'
+python3 models/pytorch-seq2seq/evaluate.py --data_path datasets/adversarial/sri/py150/random-attack/test.tsv --expt_dir final-models/seq2seq/sri/py150/normal/lstm --output_dir final-results/seq2seq/sri/py150/test-optim --load_checkpoint Best_F1 --src_field_name 'src'

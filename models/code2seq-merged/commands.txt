@@ -1,0 +1,18 @@
+# normal training
+python models/code2seq-merged/code2seq.py -te sample_data/data.val.c2s -s sample_data/trained/model -d sample_data/data
+# this trains on sample_data/data.train.c2s, validates on sample_data/data.val.c2s
+
+# normal eval
+python models/code2seq-merged/code2seq.py -t 2 -te sample_data/data0.test.c2s -l backdoor1_0.01/model_iter8 
+
+# adv training
+python models/code2seq-merged/code2seq.py -t 3 -td sample_data -te sample_data/data.val.c2s -s sample_data/trained/model -d sample_data/data
+# this trains on sample_data/data0.train.c2s, data1.train.c2s, data2.train.c2s ; validates on sample_data/data.val.c2s 
+
+# adv_eval
+python models/code2seq-merged/code2seq.py -t 3 -td sample_data -l backdoor1_0.01/model_iter8 --adv_eval -bs 100
+# this adversarially attacks with sample_data/data0.test.c2s, data1.test.c2s, data2.test.c2s; batched attack is ready, dunno what is the optimal batch size
+
+# gradient attack
+python models/code2seq-targeting/gradient_attack.py --data sample_indexed.c2s --load backdoor1_0.01/model_iter8 --output_json_path please_work.json
+# Mostly self explanatory? The sample_indexed.c2s should have an index preceding each line
