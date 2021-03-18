@@ -1,6 +1,6 @@
 # Generating Adversarial Computer Programs using Optimized Obfuscations
 
-Code repostitory for the paper Generating Adversarial Computer Programs using Optimized Obfuscations, published at ICLR 2021.
+Code repository for the paper Generating Adversarial Computer Programs using Optimized Obfuscations, published at ICLR 2021.
 
 Link to paper - https://openreview.net/forum?id=PH5PH9ZO_4 
 
