@@ -4,6 +4,18 @@ Code repository for the paper Generating Adversarial Computer Programs using Opt
 
 Link to paper - https://openreview.net/forum?id=PH5PH9ZO_4 
 
+Citation
+```
+@inproceedings{
+shashank2021generating,
+title={Generating Adversarial Computer Programs using Optimized Obfuscations},
+author={Shashank Srikant and Sijia Liu and Tamara Mitrovska and Shiyu Chang and Quanfu Fan and Gaoyuan Zhang and Una-May O{'R}eilly},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=PH5PH9ZO_4}
+}
+```
+
 ## Abstract 
 Machine learning (ML) models that learn and predict properties of computer programs are increasingly being adopted and deployed. 
 These models have demonstrated success in applications such as auto-completing code, summarizing large programs, and detecting bugs and malware in programs. 
