@@ -67,12 +67,25 @@ This command will train the model on the Python dataset. To train on Java, repla
 ```
 These scripts contain commands for various experiments. For each experiment we first create an adversarial dataset by using our attack and then evaluate the trained seq2seq model on the generated dataset. The numbers 0 and 1 in the script names refer to the GPU on which the experiments are run.
 
-This generates files in the directory `./datasets/adversarial/experiment-configuration/tokens/dataset-name/`.
+This generates files in the directory `./datasets/adversarial/experiment-configuration/tokens/dataset-name/`, where `experiment-configuration` is the same as `short_name` from the `run_attack_*` scripts and `dataset-name` is either `sri/py150` or `c2s/java-small`.
 Within this directory, 
 - `targets-test-gradient.json` contains the tokens which our attack algorithm recommends. This JSON file has the following format -- 
 ```
-an example
+{
+    "transforms.Combined" : {
+        "33": {
+            "@R_1@": "arquillian",
+            "system . out . println ( @R_4@ ) ;": "",
+            "@R_3@": "fs",
+            "if ( false ) { int @R_6@ = 1 ; } ;": "",
+            "@R_2@": "snapshot name",
+            "if ( false ) { int @R_5@ = 1 ; } ;": ""
+        }
+    }
+}
 ```
+In the example above, `transforms.Combined` is the transform name and `33` is an index for some program in the dataset.
+
 - The file `gradient-targeting/test.tsv` contains the test set with the attacks identified by our formulation inserted in them.
 
 - Collect all results into a csv table and generate plots
