@@ -21,10 +21,10 @@
 # 20. number of replacement tokens
 # 21. exact_matches (1 or 0)
 
-# DATASET_NAME="sri/py150"
-# DATASET_NAME_SMALL="py150"
-DATASET_NAME="c2s/java-small"
-DATASET_NAME_SMALL="javasmall"
+DATASET_NAME="sri/py150"
+DATASET_NAME_SMALL="py150"
+# DATASET_NAME="c2s/java-small"
+# DATASET_NAME_SMALL="javasmall"
 TRANSFORM_NAME="transforms.Combined"
 MODEL_NAME="final-models/seq2seq/$DATASET_NAME/normal"
 NUM_REPLACE=1500
