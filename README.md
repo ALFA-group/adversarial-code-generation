@@ -31,11 +31,7 @@ We further show that our formulation is better at training models that are robus
 For any queries, please contact Shashank (shash@mit.edu), Sijia (liusiji5@msu.edu), or Una-May (unamay@csail.mit.edu)
 
 ## Instructions
-Our codebase builds on the well documented codebase released by the authors of `Semantic Robustness of Models of Source Code`
-
-Paper - https://arxiv.org/abs/2002.03043
-
-Github - https://github.com/jjhenkel/averloc
+Our codebase builds on the well documented codebase released by the authors of [`Semantic Robustness of Models of Source Code`](https://github.com/jjhenkel/averloc)
 
 The repository provides a number of Makefile commands to download datasets, transform their ASTs, train code models, and finally attack and evaluate the performance on a test set. For full details on the directory structure and the organization of the files in this repository, see section [Directory Structure](#directory-structure).
 
@@ -67,6 +63,15 @@ This command will train the model on the Python dataset. To train on Java, repla
 ./experiments/run_attack_1.sh
 ```
 These scripts contain commands for various experiments. For each experiment we first create an adversarial dataset by using our attack and then evaluate the trained seq2seq model on the generated dataset. The numbers 0 and 1 in the script names refer to the GPU on which the experiments are run.
+
+This generates files in the directory `./datasets/adversarial/experiment-configuration/tokens/dataset-name/`.
+Within this directory, 
+- `targets-test-gradient.json` contains the tokens which our attack algorithm recommends. This JSON file has the following format -- 
+```
+an example
+```
+- The file `gradient-targeting/test.tsv` contains the test set with the attacks identified by our formulation inserted in them.
+
 - Collect all results into a csv table and generate plots
 ```
 python experiments/collect_results.py 1
