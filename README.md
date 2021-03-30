@@ -28,7 +28,10 @@ We further show that our formulation is better at training models that are robus
 
 [Shashank Srikant](https://shashank-srikant.github.io/),  [Sijia Liu](https://lsjxjtu.github.io/), [Tamara Mitrovska](https://superurop.mit.edu/scholars/tamara-mitrovska/), [Shiyu Chang](http://people.csail.mit.edu/chang87/), [Quanfu Fan](https://mitibmwatsonailab.mit.edu/people/quanfu-fan/), [Gaoyuan Zhang](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Gaoyuan.Zhang), and  [Una-May O’Reilly](https://alfagroup.csail.mit.edu/unamay).
 
-For any queries, please contact Shashank (shash@mit.edu), Sijia (liusiji5@msu.edu), or Una-May (unamay@csail.mit.edu)
+If you face issues running this codebase, please [open an issue](https://github.com/ALFA-group/adversarial-code-generation/issues) on this repository, and mention as much information to reproduce your issue, including the exact command you have run, the configurations that you have used, the output you see, etc.
+Additionally, feel free to write to Shashank (shash@mit.edu) and Tamara (tamaram@mit.edu).
+
+To discuss details on the method we introduce, contact Shashank (shash@mit.edu), Sijia (liusiji5@msu.edu), or Una-May (unamay@csail.mit.edu).
 
 ## Instructions
 Our codebase builds on the well documented codebase released by the authors of [`Semantic Robustness of Models of Source Code`](https://github.com/jjhenkel/averloc)
