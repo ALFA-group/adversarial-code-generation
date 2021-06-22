@@ -33,6 +33,11 @@ Additionally, feel free to write to Shashank (shash@mit.edu) and Tamara (tamaram
 
 To discuss details on the method we introduce, contact Shashank (shash@mit.edu), Sijia (liusiji5@msu.edu), or Una-May (unamay@csail.mit.edu).
 
+## Talk video
+If you want to get a big-picture understanding of our formulation, please watch this talk Shashank presented at the MIT-IBM Watson AI Lab.
+
+Link - [https://www.youtube.com/watch?v=b23HNPilfB4](https://www.youtube.com/watch?v=b23HNPilfB4)
+
 ## Instructions
 Our codebase builds on the well documented codebase released by the authors of [`Semantic Robustness of Models of Source Code`](https://github.com/jjhenkel/averloc)
 
