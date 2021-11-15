@@ -4,6 +4,8 @@ Code repository for the paper Generating Adversarial Computer Programs using Opt
 
 Link to paper - https://openreview.net/forum?id=PH5PH9ZO_4 
 
+Slides - 
+
 Citation
 ```
 @inproceedings{
@@ -26,9 +28,10 @@ We further show that our formulation is better at training models that are robus
 
 ## Authors
 
-[Shashank Srikant](https://shashank-srikant.github.io/),  [Sijia Liu](https://lsjxjtu.github.io/), [Tamara Mitrovska](https://superurop.mit.edu/scholars/tamara-mitrovska/), [Shiyu Chang](http://people.csail.mit.edu/chang87/), [Quanfu Fan](https://mitibmwatsonailab.mit.edu/people/quanfu-fan/), [Gaoyuan Zhang](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Gaoyuan.Zhang), and  [Una-May O’Reilly](https://alfagroup.csail.mit.edu/unamay).
+[Shashank Srikant](https://shashank-srikant.github.io/),  [Sijia Liu](https://lsjxjtu.github.io/), [Tamara Mitrovska](https://superurop.mit.edu/scholars/tamara-mitrovska/), [Shiyu Chang](https://code-terminator.github.io/), [Quanfu Fan](https://mitibmwatsonailab.mit.edu/people/quanfu-fan/), [Gaoyuan Zhang](https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Gaoyuan.Zhang), and  [Una-May O’Reilly](https://alfagroup.csail.mit.edu/unamay).
 
 If you face issues running this codebase, please [open an issue](https://github.com/ALFA-group/adversarial-code-generation/issues) on this repository, and mention as much information to reproduce your issue, including the exact command you have run, the configurations that you have used, the output you see, etc.
+See [posts like these](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f) which talk about how you can communicate your problem effectively via Github issues.
 Additionally, feel free to write to Shashank (shash@mit.edu) and Tamara (tamaram@mit.edu).
 
 To discuss details on the method we introduce, contact Shashank (shash@mit.edu), Sijia (liusiji5@msu.edu), or Una-May (unamay@csail.mit.edu).
